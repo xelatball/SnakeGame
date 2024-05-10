@@ -1,23 +1,15 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Snake Game, Copyright Xelat. All Rights Reserved.
 
 using UnrealBuildTool;
 
 public class SnakeGame : ModuleRules
 {
-	public SnakeGame(ReadOnlyTargetRules Target) : base(Target)
-	{
-		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+    public SnakeGame(ReadOnlyTargetRules Target) : base(Target)
+    {
+        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
-
-		// Uncomment if you are using Slate UI
-		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
-		// Uncomment if you are using online features
-		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
-
-		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
-	}
+        PublicDependencyModuleNames.AddRange(
+            new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG", "EnhancedInput", "Niagara", "SlateCore" });
+        PublicIncludePaths.AddRange(new string[] { "SnakeGame" });
+    }
 }

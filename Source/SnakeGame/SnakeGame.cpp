@@ -1,6 +1,6 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Snake Game, Copyright Xelat. All Rights Reserved.
 
 #include "SnakeGame.h"
 #include "Modules/ModuleManager.h"
 
-IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, SnakeGame, "SnakeGame" );
+IMPLEMENT_PRIMARY_GAME_MODULE(FDefaultGameModuleImpl, SnakeGame, "SnakeGame");
